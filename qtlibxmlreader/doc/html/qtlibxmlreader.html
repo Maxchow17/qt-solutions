@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- qtlibxmlreader-2.1_1-opensource/src/qtlibxmlreader.cpp -->
+<head>
+  <title>QtLibxmlReader Class Reference</title>
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top" width="32"><img src="images/qt-logo.png" align="left" width="57" height="67" border="0" /></td>
+<td width="1">&nbsp;&nbsp;</td><td class="postheader" valign="center"><a href="index.html"><font color="#004faf">Home</font></a></td>
+</tr></table><h1 class="title">QtLibxmlReader Class Reference</h1>
+<p>The QtLibxmlReader class is a SAX2 parser based on libxml2, with a <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html">QXmlReader</a> interface. <a href="#details">More...</a></p>
+<pre> #include &lt;QtLibxmlReader&gt;</pre><p>Inherits <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html">QXmlReader</a>.</p>
+<ul>
+<li><a href="qtlibxmlreader-members.html">List of all members, including inherited members</a></li>
+<li><a href="qtlibxmlreader-obsolete.html">Obsolete members</a></li>
+</ul>
+<a name="public-functions"></a>
+<h3>Public Functions</h3>
+<ul>
+<li><div class="fn"></div><b><a href="qtlibxmlreader.html#QtLibxmlReader">QtLibxmlReader</a></b> ()</li>
+<li><div class="fn"></div>virtual <b><a href="qtlibxmlreader.html#dtor.QtLibxmlReader">~QtLibxmlReader</a></b> ()</li>
+<li><div class="fn"></div>virtual QXmlDTDHandler * <b><a href="qtlibxmlreader.html#DTDHandler">DTDHandler</a></b> () const</li>
+<li><div class="fn"></div>virtual QXmlContentHandler * <b><a href="qtlibxmlreader.html#contentHandler">contentHandler</a></b> () const</li>
+<li><div class="fn"></div>virtual QXmlDeclHandler * <b><a href="qtlibxmlreader.html#declHandler">declHandler</a></b> () const</li>
+<li><div class="fn"></div>virtual QXmlEntityResolver * <b><a href="qtlibxmlreader.html#entityResolver">entityResolver</a></b> () const</li>
+<li><div class="fn"></div>virtual QXmlErrorHandler * <b><a href="qtlibxmlreader.html#errorHandler">errorHandler</a></b> () const</li>
+<li><div class="fn"></div>virtual bool <b><a href="qtlibxmlreader.html#feature">feature</a></b> ( const QString &amp; <i>name</i>, bool * <i>ok</i> = 0 ) const</li>
+<li><div class="fn"></div>virtual bool <b><a href="qtlibxmlreader.html#hasFeature">hasFeature</a></b> ( const QString &amp; <i>name</i> ) const</li>
+<li><div class="fn"></div>virtual bool <b><a href="qtlibxmlreader.html#hasProperty">hasProperty</a></b> ( const QString &amp; <i>name</i> ) const</li>
+<li><div class="fn"></div>virtual QXmlLexicalHandler * <b><a href="qtlibxmlreader.html#lexicalHandler">lexicalHandler</a></b> () const</li>
+<li><div class="fn"></div>virtual bool <b><a href="qtlibxmlreader.html#parse">parse</a></b> ( const QXmlInputSource * <i>input</i> )</li>
+<li><div class="fn"></div>bool <b><a href="qtlibxmlreader.html#parse-3">parse</a></b> ( const QString &amp; <i>uri</i> )</li>
+<li><div class="fn"></div>virtual void * <b><a href="qtlibxmlreader.html#property">property</a></b> ( const QString &amp; <i>name</i>, bool * <i>ok</i> = 0 ) const</li>
+<li><div class="fn"></div>virtual void <b><a href="qtlibxmlreader.html#setContentHandler">setContentHandler</a></b> ( QXmlContentHandler * <i>handler</i> )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtlibxmlreader.html#setDTDHandler">setDTDHandler</a></b> ( QXmlDTDHandler * <i>handler</i> )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtlibxmlreader.html#setDeclHandler">setDeclHandler</a></b> ( QXmlDeclHandler * <i>handler</i> )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtlibxmlreader.html#setEntityResolver">setEntityResolver</a></b> ( QXmlEntityResolver * <i>resolver</i> )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtlibxmlreader.html#setErrorHandler">setErrorHandler</a></b> ( QXmlErrorHandler * <i>handler</i> )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtlibxmlreader.html#setFeature">setFeature</a></b> ( const QString &amp; <i>name</i>, bool <i>value</i> )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtlibxmlreader.html#setLexicalHandler">setLexicalHandler</a></b> ( QXmlLexicalHandler * <i>handler</i> )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtlibxmlreader.html#setProperty">setProperty</a></b> ( const QString &amp; <i>name</i>, void * <i>value</i> )</li>
+</ul>
+<ul>
+<li><div class="fn"></div>19 public functions inherited from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#public-functions">QXmlReader</a></li>
+</ul>
+<a name="details"></a>
+<hr />
+<h2>Detailed Description</h2>
+<p>The QtLibxmlReader class is a SAX2 parser based on libxml2, with a <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html">QXmlReader</a> interface.</p>
+<p><tt>QtLibxmlReader</tt> is a SAX2 parser. Like <tt>QXmlSimpleReader</tt>, it inherits <tt>QXmlReader</tt> and therefore Qt's SAX API. Unlike <tt>QXmlSimpleReader</tt>, <tt>QtLibxmlReader</tt> uses <tt>libxml2</tt> to do the actual parsing.</p>
+<p>For an overview of differences between <tt>QtLibxmlReader</tt> and <tt>QXmlSimpleReader</tt>, see the <a href="overview.html">overview</a>.</p>
+<p>For more information on Qt's SAX2 interface, see the documentation for <tt>QXmlReader</tt> and <tt>QtXmlSimpleReader</tt>.</p>
+<hr />
+<h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="QtLibxmlReader"></a>QtLibxmlReader::QtLibxmlReader ()</h3>
+<p>Constructs a <a href="qtlibxmlreader.html">QtLibxmlReader</a> object.</p>
+<h3 class="fn"><a name="dtor.QtLibxmlReader"></a>QtLibxmlReader::~QtLibxmlReader ()&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Destroys a <a href="qtlibxmlreader.html">QtLibxmlReader</a> object.</p>
+<h3 class="fn"><a name="DTDHandler"></a><a href="http://qt.nokia.com/doc/4.5/qxmldtdhandler.html">QXmlDTDHandler</a> * QtLibxmlReader::DTDHandler () const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Returns the DTD handler or 0 if none was set.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#DTDHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#setDTDHandler">setDTDHandler</a>().</p>
+<h3 class="fn"><a name="contentHandler"></a><a href="http://qt.nokia.com/doc/4.5/qxmlcontenthandler.html">QXmlContentHandler</a> * QtLibxmlReader::contentHandler () const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Returns the content handler or 0 if none was set.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#contentHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#setContentHandler">setContentHandler</a>().</p>
+<h3 class="fn"><a name="declHandler"></a><a href="http://qt.nokia.com/doc/4.5/qxmldeclhandler.html">QXmlDeclHandler</a> * QtLibxmlReader::declHandler () const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Returns the declaration handler or 0 if none was set.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#declHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#setDeclHandler">setDeclHandler</a>().</p>
+<h3 class="fn"><a name="entityResolver"></a><a href="http://qt.nokia.com/doc/4.5/qxmlentityresolver.html">QXmlEntityResolver</a> * QtLibxmlReader::entityResolver () const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Returns 0. <tt>QXmlEntityResolver</tt> is not supported.</p>
+<p>Instead, if the <tt>NOENT</tt> feature is set, <tt>libxml2</tt> loads external entities from the local filesystem, or from the network via HTTP or FTP. If the <tt>NOENT</tt> feature is not set, reports all entity references with <tt>QContentHandler::skippedEntity()</tt>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#entityResolver">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#setEntityResolver">setEntityResolver</a>(), <a href="qtlibxmlreader.html#property">property</a>(), and <a href="qtlibxmlreader.html#setProperty">setProperty</a>().</p>
+<h3 class="fn"><a name="errorHandler"></a><a href="http://qt.nokia.com/doc/4.5/qxmlerrorhandler.html">QXmlErrorHandler</a> * QtLibxmlReader::errorHandler () const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Returns the error handler or 0 if none is set.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#errorHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#setErrorHandler">setErrorHandler</a>().</p>
+<h3 class="fn"><a name="feature"></a>bool QtLibxmlReader::feature ( const <a href="http://qt.nokia.com/doc/4.5/qstring.html">QString</a> &amp; <i>name</i>, bool * <i>ok</i> = 0 ) const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>If the reader has the feature called <i>name</i>, the feature's value is returned. If no such feature exists the return value is undefined.</p>
+<p>If <i>ok</i> is not 0: <i>ok</i> is set to <tt>TRUE</tt> if the reader has the feature called <i>name</i>; otherwise <i>ok</i> is set to <tt>FALSE</tt>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#feature">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#setFeature">setFeature</a>() and <a href="qtlibxmlreader.html#hasFeature">hasFeature</a>().</p>
+<h3 class="fn"><a name="hasFeature"></a>bool QtLibxmlReader::hasFeature ( const <a href="http://qt.nokia.com/doc/4.5/qstring.html">QString</a> &amp; <i>name</i> ) const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Returns <tt>TRUE</tt> if the reader has the feature called <i>name</i>; otherwise returns <tt>FALSE</tt>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#hasFeature">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#feature">feature</a>() and <a href="qtlibxmlreader.html#setFeature">setFeature</a>().</p>
+<h3 class="fn"><a name="hasProperty"></a>bool QtLibxmlReader::hasProperty ( const <a href="http://qt.nokia.com/doc/4.5/qstring.html">QString</a> &amp; <i>name</i> ) const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Returns <tt>TRUE</tt> if the reader has the property <i>name</i>; otherwise returns <tt>FALSE</tt>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#hasProperty">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#property">property</a>() and <a href="qtlibxmlreader.html#setProperty">setProperty</a>().</p>
+<h3 class="fn"><a name="lexicalHandler"></a><a href="http://qt.nokia.com/doc/4.5/qxmllexicalhandler.html">QXmlLexicalHandler</a> * QtLibxmlReader::lexicalHandler () const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Returns the lexical handler or 0 if none was set.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#lexicalHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#setLexicalHandler">setLexicalHandler</a>().</p>
+<h3 class="fn"><a name="parse"></a>bool QtLibxmlReader::parse ( const <a href="http://qt.nokia.com/doc/4.5/qxmlinputsource.html">QXmlInputSource</a> * <i>input</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Reads an XML document from <i>input</i> in and parses it. Returns <tt>FALSE</tt> if the parsing detects an error; otherwise returns <tt>TRUE</tt>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#parse">QXmlReader</a>.</p>
+<h3 class="fn"><a name="parse-3"></a>bool QtLibxmlReader::parse ( const <a href="http://qt.nokia.com/doc/4.5/qstring.html">QString</a> &amp; <i>uri</i> )</h3>
+<p>Reads an XML document from <i>uri</i> and parses it. <i>uri</i> may be a file name, or a HTTP or FTP url. Returns <tt>FALSE</tt> if the parsing detects an error; otherwise returns <tt>TRUE</tt>.</p>
+<p>This function does not use <tt>QXmlInputSource</tt>. Instead, <i>uri</i> is passed directly to <tt>libxml2</tt>. This has several advantages:</p>
+<ul>
+<li><tt>QXmlInputSource</tt> reads the whole document into memory. This function, on the other hand, parses the document in chunks.</li>
+<li><tt>QXmlInputSource</tt> converts the document to UTF-16, which is then converted to UTF-8 by <tt>libxml2</tt>. This function converts directly from the document's encoding to UTF-8.</li>
+</ul>
+<h3 class="fn"><a name="property"></a>void * QtLibxmlReader::property ( const <a href="http://qt.nokia.com/doc/4.5/qstring.html">QString</a> &amp; <i>name</i>, bool * <i>ok</i> = 0 ) const&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>If the reader has the property <i>name</i>, this function returns the value of the property; otherwise the return value is undefined.</p>
+<p>If <i>ok</i> is not 0 and the reader has the <i>name</i> property, <i>ok</i> is set to <tt>TRUE</tt>; otherwise <i>ok</i> is set to <tt>FALSE</tt>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#property">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#setProperty">setProperty</a>() and <a href="qtlibxmlreader.html#hasProperty">hasProperty</a>().</p>
+<h3 class="fn"><a name="setContentHandler"></a>void QtLibxmlReader::setContentHandler ( <a href="http://qt.nokia.com/doc/4.5/qxmlcontenthandler.html">QXmlContentHandler</a> * <i>handler</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Sets the content handler to <i>handler</i>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#setContentHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#contentHandler">contentHandler</a>().</p>
+<h3 class="fn"><a name="setDTDHandler"></a>void QtLibxmlReader::setDTDHandler ( <a href="http://qt.nokia.com/doc/4.5/qxmldtdhandler.html">QXmlDTDHandler</a> * <i>handler</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Sets the DTD handler to <i>handler</i>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#setDTDHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#DTDHandler">DTDHandler</a>().</p>
+<h3 class="fn"><a name="setDeclHandler"></a>void QtLibxmlReader::setDeclHandler ( <a href="http://qt.nokia.com/doc/4.5/qxmldeclhandler.html">QXmlDeclHandler</a> * <i>handler</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Sets the declaration handler to <i>handler</i>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#setDeclHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#declHandler">declHandler</a>().</p>
+<h3 class="fn"><a name="setEntityResolver"></a>void QtLibxmlReader::setEntityResolver ( <a href="http://qt.nokia.com/doc/4.5/qxmlentityresolver.html">QXmlEntityResolver</a> * <i>resolver</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Does nothing. <tt>QXmlEntityResolver</tt> is not supported. <i>resolver</i> is ignored.</p>
+<p>Instead, if the <tt>NOENT</tt> feature is set, <tt>libxml2</tt> loads external entities from the local filesystem, or from the network via HTTP or FTP. If the <tt>NOENT</tt> feature is not set, reports all entity references with <tt>QContentHandler::skippedEntity()</tt>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#setEntityResolver">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#entityResolver">entityResolver</a>(), <a href="qtlibxmlreader.html#property">property</a>(), and <a href="qtlibxmlreader.html#setProperty">setProperty</a>().</p>
+<h3 class="fn"><a name="setErrorHandler"></a>void QtLibxmlReader::setErrorHandler ( <a href="http://qt.nokia.com/doc/4.5/qxmlerrorhandler.html">QXmlErrorHandler</a> * <i>handler</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Sets the error handler to <i>handler</i>. Clears the error handler if <i>handler</i> is 0.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#setErrorHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#errorHandler">errorHandler</a>().</p>
+<h3 class="fn"><a name="setFeature"></a>void QtLibxmlReader::setFeature ( const <a href="http://qt.nokia.com/doc/4.5/qstring.html">QString</a> &amp; <i>name</i>, bool <i>value</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Sets the state of the feature <i>name</i> to <i>value</i>:</p>
+<p>If the feature is not recognized, it is ignored.</p>
+<p>The following features are supported:</p>
+<p><table align="center" cellpadding="2" cellspacing="1" border="0">
+<thead><tr valign="top" class="qt-style"><th>Feature</th><th>Notes</th></tr></thead>
+<tr valign="top" class="odd"><td><i>http://qtsoftware.com/xml/features/LIBXML2_NOENT</i></td><td>If this feature is <tt>TRUE</tt>, <tt>QXmlContentHandler::skippedEntity()</tt> is not called for external entity references. Instead, the parser replaces them with their replacement text. <tt>QtLibxmlReader</tt> can load external entities from the local filesystem, or from the network via HTTP or FTP. If this feature is <tt>FALSE</tt> (the default), all external entity references are reported with <tt>QXmlContentHandler::skippedEntity()</tt>. In either case, internal entities are replaced and undefined entities are reported with <tt>QXmlErrorHandler::error()</tt>.</td></tr>
+<tr valign="top" class="even"><td><i>http://qtsoftware.com/xml/features/LIBXML2_RECOVER</i></td><td>If this feature is <tt>TRUE</tt>, the parser continues parsing after <tt>QXmlErrorHandler::error()</tt>. If this feature is <tt>FALSE</tt> (the default), the parser stops after <tt>QXmlErrorHandler::error()</tt>.</td></tr>
+</table></p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#setFeature">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#feature">feature</a>() and <a href="qtlibxmlreader.html#hasFeature">hasFeature</a>().</p>
+<h3 class="fn"><a name="setLexicalHandler"></a>void QtLibxmlReader::setLexicalHandler ( <a href="http://qt.nokia.com/doc/4.5/qxmllexicalhandler.html">QXmlLexicalHandler</a> * <i>handler</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Sets the lexical handler to <i>handler</i>.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#setLexicalHandler">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#lexicalHandler">lexicalHandler</a>().</p>
+<h3 class="fn"><a name="setProperty"></a>void QtLibxmlReader::setProperty ( const <a href="http://qt.nokia.com/doc/4.5/qstring.html">QString</a> &amp; <i>name</i>, void * <i>value</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Sets the property <i>name</i> to <i>value</i>. If the reader doesn't have the property nothing happens.</p>
+<p>Reimplemented from <a href="http://qt.nokia.com/doc/4.5/qxmlreader.html#setProperty">QXmlReader</a>.</p>
+<p>See also <a href="qtlibxmlreader.html#property">property</a>() and <a href="qtlibxmlreader.html#hasProperty">hasProperty</a>().</p>
+<p /><address><hr /><div align="center">
+<table width="100%" cellspacing="0" border="0"><tr class="address">
+<td width="30%" align="left">Copyright &copy; 2009 Nokia Corporation and/or its subsidiary(-ies)</td>
+<td width="40%" align="center"><a href="http://qt.nokia.com/doc/trademarks.html">Trademarks</a></td>
+<td width="30%" align="right"><div align="right">Qt Solutions</div></td>
+</tr></table></div></address></body>
+</html>

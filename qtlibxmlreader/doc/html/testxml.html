@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- qtlibxmlreader-2.1_1-opensource/doc/testxml.qdoc -->
+<head>
+  <title>testxml</title>
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top" width="32"><img src="images/qt-logo.png" align="left" width="57" height="67" border="0" /></td>
+<td width="1">&nbsp;&nbsp;</td><td class="postheader" valign="center"><a href="index.html"><font color="#004faf">Home</font></a></td>
+</tr></table><h1 class="title">testxml<br /><span class="subtitle"></span>
+</h1>
+<p>This package's example directory contains a command-line tool called <tt>testxml</tt>. This tool is useful if you want to see if there are any differences in the way a file is parsed by <tt>QXmlSimpleReader</tt> and by <tt>QtLibxmlReader</tt>.</p>
+<p><tt>testxml</tt> reads an xml file and parses it first with <tt>QtLibxmlReader</tt>, then with <tt>QXmlSimpleReader</tt>. For each parser, <tt>testxml</tt> prints out a trace of all activated SAX callbacks and their arguments.</p>
+<pre> &gt; testxml data.xml
+ QtLibxmlReader returned 1
+ setDocumentLocator(locator={columnNumber=1, lineNumber=1})
+ startDocument()
+    startDTD(name=&quot;document&quot;, publicId=&quot;&quot;, systemId=&quot;&quot;)
+       externalEntityDecl(name=&quot;myExternalEntity&quot;, publicId=&quot;&quot;, systemId=&quot;2.ent&quot;)
+       internatlEntityDecl(name=&quot;myInternalEntity&quot;, value=&quot;vlahuuurg&quot;)
+       externalEntityDecl(name=&quot;myNetworkEntity&quot;, publicId=&quot;&quot;, systemId=&quot;http:<span class="comment">//osada.com.pl/2net.ent&quot;)</span>
+    endDTD()
+    startElement(namespaceURI=&quot;&quot;, localName=&quot;document&quot;, qName=&quot;document&quot;, atts=[])
+       characters(ch=&quot;\n    &quot;)
+       characters(ch=&quot;vlahuuurg&quot;)
+       startElement(namespaceURI=&quot;&quot;, localName=&quot;rike&quot;, qName=&quot;rike&quot;, atts=[])
+          characters(ch=&quot;Hello World! :)&quot;)
+       endElement(namespaceURI=&quot;&quot;, localName=&quot;rike&quot;, qName=&quot;rike&quot;)
+       characters(ch=&quot;\n&quot;)
+       startElement(namespaceURI=&quot;&quot;, localName=&quot;rike&quot;, qName=&quot;rike&quot;, atts=[])
+          characters(ch=&quot;Hello Networked World! :)&quot;)
+       endElement(namespaceURI=&quot;&quot;, localName=&quot;rike&quot;, qName=&quot;rike&quot;)
+       characters(ch=&quot;\n&quot;)
+       skippedEntity(name=&quot;myUndefinedEntity&quot;)
+       characters(ch=&quot;\n&quot;)
+    endElement(namespaceURI=&quot;&quot;, localName=&quot;document&quot;, qName=&quot;document&quot;)
+ endDocument()
+
+ QtXmlSimpleReader returned 1
+ setDocumentLocator(locator={columnNumber=1, lineNumber=1})
+ startDocument()
+    processingInstruction(target=&quot;xml&quot;, data=&quot;version = '1.0' encoding = 'UTF-8'&quot;)
+    startDTD(name=&quot;document&quot;, publicId=&quot;&quot;, systemId=&quot;&quot;)
+       externalEntityDecl(name=&quot;myExternalEntity&quot;, publicId=&quot;&quot;, systemId=&quot;2.ent&quot;)
+       internatlEntityDecl(name=&quot;myInternalEntity&quot;, value=&quot;vlahuuurg&quot;)
+       externalEntityDecl(name=&quot;myNetworkEntity&quot;, publicId=&quot;&quot;, systemId=&quot;http:<span class="comment">//osada.com.pl/2net.ent&quot;)</span>
+    endDTD()
+    startElement(namespaceURI=&quot;&quot;, localName=&quot;document&quot;, qName=&quot;document&quot;, atts=[])
+       resolveEntity(publicId=&quot;&quot;, systemId=&quot;2.ent&quot;, ret={})
+       skippedEntity(name=&quot;myExternalEntity&quot;)
+       resolveEntity(publicId=&quot;&quot;, systemId=&quot;http:<span class="comment">//osada.com.pl/2net.ent&quot;, ret={})</span>
+       skippedEntity(name=&quot;myNetworkEntity&quot;)
+       skippedEntity(name=&quot;myUndefinedEntity&quot;)
+       characters(ch=&quot;\n    vlahuuurg\n&quot;)
+    endElement(namespaceURI=&quot;&quot;, localName=&quot;document&quot;, qName=&quot;document&quot;)
+ endDocument()</pre>
+<p>The xml file in this example contained:</p>
+<pre> &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+ &lt;!DOCTYPE document [
+     &lt;!ENTITY myExternalEntity SYSTEM &quot;2.ent&quot;&gt;
+     &lt;!ENTITY myInternalEntity &quot;vlahuuurg&quot;&gt;
+     &lt;!ENTITY myNetworkEntity SYSTEM &quot;http:<span class="comment">//osada.com.pl/2net.ent&quot;&gt;</span>
+ ]&gt;
+ &lt;document&gt;
+     &amp;myInternalEntity;&amp;myExternalEntity;&amp;myNetworkEntity;&amp;myUndefinedEntity;
+ &lt;/document&gt;</pre>
+<p><tt>testxml</tt> accepts the command line options <tt>-libxml</tt> and <tt>-qtxml</tt>: if one of these is specified <i>testxml</i> will only run the specified parser. This is useful if you want to be certain you didn't miss any changes, since you can use these to generate separate traces for <tt>QtLibxmlParser</tt> and <tt>QXmlSimpleParser</tt> and then diff the results.</p>
+<p /><address><hr /><div align="center">
+<table width="100%" cellspacing="0" border="0"><tr class="address">
+<td width="30%" align="left">Copyright &copy; 2009 Nokia Corporation and/or its subsidiary(-ies)</td>
+<td width="40%" align="center"><a href="http://qt.nokia.com/doc/trademarks.html">Trademarks</a></td>
+<td width="30%" align="right"><div align="right">Qt Solutions</div></td>
+</tr></table></div></address></body>
+</html>

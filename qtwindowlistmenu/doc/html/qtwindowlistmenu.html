@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- qtwindowlistmenu-2.2_1-opensource/src/qtwindowlistmenu.cpp -->
+<head>
+  <title>QtWindowListMenu Class Reference</title>
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top" width="32"><img src="images/qt-logo.png" align="left" width="57" height="67" border="0" /></td>
+<td width="1">&nbsp;&nbsp;</td><td class="postheader" valign="center"><a href="index.html"><font color="#004faf">Home</font></a></td>
+</tr></table><h1 class="title">QtWindowListMenu Class Reference</h1>
+<p>The QtWindowListMenu class is a menu that provides navigation commands for the subwindows in a <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a>. <a href="#details">More...</a></p>
+<pre> #include &lt;QtWindowListMenu&gt;</pre><p>Inherits <a href="http://qt.nokia.com/doc/4.5/qmenu.html">QMenu</a>.</p>
+<ul>
+<li><a href="qtwindowlistmenu-members.html">List of all members, including inherited members</a></li>
+<li><a href="qtwindowlistmenu-obsolete.html">Obsolete members</a></li>
+</ul>
+<a name="public-types"></a>
+<h3>Public Types</h3>
+<ul>
+<li><div class="fn"></div>enum <b><a href="qtwindowlistmenu.html#StandardAction-enum">StandardAction</a></b> { CloseAction, CloseAllAction, TileAction, CascadeAction, NextAction, PrevAction }</li>
+</ul>
+<a name="public-functions"></a>
+<h3>Public Functions</h3>
+<ul>
+<li><div class="fn"></div><b><a href="qtwindowlistmenu.html#QtWindowListMenu">QtWindowListMenu</a></b> ( QWidget * <i>parent</i> = 0 )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtwindowlistmenu.html#attachToMdiArea">attachToMdiArea</a></b> ( QMdiArea * <i>mdiArea</i> )</li>
+<li><div class="fn"></div>QMdiArea * <b><a href="qtwindowlistmenu.html#attachedMdiArea">attachedMdiArea</a></b> () const</li>
+<li><div class="fn"></div>QIcon <b><a href="qtwindowlistmenu.html#defaultIcon">defaultIcon</a></b> () const</li>
+<li><div class="fn"></div>void <b><a href="qtwindowlistmenu.html#setDefaultIcon">setDefaultIcon</a></b> ( const QIcon &amp; <i>icon</i> )</li>
+<li><div class="fn"></div>void <b><a href="qtwindowlistmenu.html#setWindowIcon">setWindowIcon</a></b> ( const QMdiSubWindow * <i>window</i>, const QIcon &amp; <i>icon</i> )</li>
+<li><div class="fn"></div>QAction * <b><a href="qtwindowlistmenu.html#standardAction">standardAction</a></b> ( StandardAction <i>item</i> ) const</li>
+<li><div class="fn"></div>QIcon <b><a href="qtwindowlistmenu.html#windowIcon">windowIcon</a></b> ( const QMdiSubWindow * <i>window</i> ) const</li>
+</ul>
+<ul>
+<li><div class="fn"></div>35 public functions inherited from <a href="http://qt.nokia.com/doc/4.5/qmenu.html#public-functions">QMenu</a></li>
+<li><div class="fn"></div>207 public functions inherited from <a href="http://qt.nokia.com/doc/4.5/qwidget.html#public-functions">QWidget</a></li>
+<li><div class="fn"></div>12 public functions inherited from <a href="http://qt.nokia.com/doc/4.5/qpaintdevice.html#public-functions">QPaintDevice</a></li>
+<li><div class="fn"></div>29 public functions inherited from <a href="http://qt.nokia.com/doc/4.5/qobject.html#public-functions">QObject</a></li>
+</ul>
+<a name="protected-slots"></a>
+<h3>Protected Slots</h3>
+<ul>
+<li><div class="fn"></div>void <b><a href="qtwindowlistmenu.html#activateWindow">activateWindow</a></b> ( QAction * <i>act</i> )</li>
+<li><div class="fn"></div>virtual void <b><a href="qtwindowlistmenu.html#syncWithMdiArea">syncWithMdiArea</a></b> ()</li>
+<li><div class="fn"></div>void <b><a href="qtwindowlistmenu.html#windowDestroyed">windowDestroyed</a></b> ( QObject * <i>obj</i> )</li>
+</ul>
+<ul>
+<li><div class="fn"></div>1 protected slot inherited from <a href="http://qt.nokia.com/doc/4.5/qwidget.html#protected-slots">QWidget</a></li>
+</ul>
+<h3>Additional Inherited Members</h3>
+<ul>
+<li><div class="fn"></div>4 properties inherited from <a href="http://qt.nokia.com/doc/4.5/qmenu.html#properties">QMenu</a></li>
+<li><div class="fn"></div>57 properties inherited from <a href="http://qt.nokia.com/doc/4.5/qwidget.html#properties">QWidget</a></li>
+<li><div class="fn"></div>1 property inherited from <a href="http://qt.nokia.com/doc/4.5/qobject.html#properties">QObject</a></li>
+<li><div class="fn"></div>19 public slots inherited from <a href="http://qt.nokia.com/doc/4.5/qwidget.html#public-slots">QWidget</a></li>
+<li><div class="fn"></div>1 public slot inherited from <a href="http://qt.nokia.com/doc/4.5/qobject.html#public-slots">QObject</a></li>
+<li><div class="fn"></div>4 signals inherited from <a href="http://qt.nokia.com/doc/4.5/qmenu.html#signals">QMenu</a></li>
+<li><div class="fn"></div>1 signal inherited from <a href="http://qt.nokia.com/doc/4.5/qwidget.html#signals">QWidget</a></li>
+<li><div class="fn"></div>1 signal inherited from <a href="http://qt.nokia.com/doc/4.5/qobject.html#signals">QObject</a></li>
+<li><div class="fn"></div>1 public type inherited from <a href="http://qt.nokia.com/doc/4.5/qobject.html#public-variables">QObject</a></li>
+<li><div class="fn"></div>2 static public members inherited from <a href="http://qt.nokia.com/doc/4.5/qmenu.html#static-public-members">QMenu</a></li>
+<li><div class="fn"></div>4 static public members inherited from <a href="http://qt.nokia.com/doc/4.5/qwidget.html#static-public-members">QWidget</a></li>
+<li><div class="fn"></div>4 static public members inherited from <a href="http://qt.nokia.com/doc/4.5/qobject.html#static-public-members">QObject</a></li>
+<li><div class="fn"></div>3 protected functions inherited from <a href="http://qt.nokia.com/doc/4.5/qmenu.html#protected-functions">QMenu</a></li>
+<li><div class="fn"></div>37 protected functions inherited from <a href="http://qt.nokia.com/doc/4.5/qwidget.html#protected-functions">QWidget</a></li>
+<li><div class="fn"></div>1 protected function inherited from <a href="http://qt.nokia.com/doc/4.5/qpaintdevice.html#protected-functions">QPaintDevice</a></li>
+<li><div class="fn"></div>7 protected functions inherited from <a href="http://qt.nokia.com/doc/4.5/qobject.html#protected-functions">QObject</a></li>
+<li><div class="fn"></div>1 protected type inherited from <a href="http://qt.nokia.com/doc/4.5/qpaintdevice.html#protected-variables">QPaintDevice</a></li>
+<li><div class="fn"></div>2 protected variables inherited from <a href="http://qt.nokia.com/doc/4.5/qobject.html#protected-variables">QObject</a></li>
+</ul>
+<a name="details"></a>
+<hr />
+<h2>Detailed Description</h2>
+<p>The QtWindowListMenu class is a menu that provides navigation commands for the subwindows in a <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a>.</p>
+<p>It is typically used as the conventional &quot;Windows&quot; item in an MDI application's menubar. It provides some standard commands for arranging and closing the MDI subwindows, corresponding to the slots of <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a>, as well as shortcuts to navigate directly to each of them.</p>
+<p>Usage: After creation, use <a href="qtwindowlistmenu.html#attachToMdiArea">attachToMdiArea</a>() to tell the QtWindowListMenu object which <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a> object it should provide navigation commands for. It can then be added to a <a href="http://qt.nokia.com/doc/4.5/qmenubar.html">QMenuBar</a> (or other objects that can take QMenus or QActions, like <a href="http://qt.nokia.com/doc/4.5/qtoolbutton.html">QToolButton</a> or <a href="http://qt.nokia.com/doc/4.5/qmenu.html">QMenu</a>) in the ordinary way, since QtWindowListMenu is a <a href="http://qt.nokia.com/doc/4.5/qmenu.html">QMenu</a> subclass.</p>
+<p>The subwindow navigation items may be given a common icon with <a href="qtwindowlistmenu.html#setDefaultIcon">setDefaultIcon</a>(). The item icon for a specific subwindow can be set with <a href="qtwindowlistmenu.html#setWindowIcon">setWindowIcon</a>().</p>
+<p>Customization: Additional menu items (actions) can be inserted into this menu in the ordinary way for a <a href="http://qt.nokia.com/doc/4.5/qmenu.html">QMenu</a>. The <a href="qtwindowlistmenu.html#standardAction">standardAction</a>() method gives access to the standard navigation items, which can be used to change their icon, shortcut, visibility etc. Ultimately, the whole menu can be customized by overriding <a href="qtwindowlistmenu.html#syncWithMdiArea">syncWithMdiArea</a>() in a subclass of QtWindowListMenu.</p>
+<p>If a QtWindowListMenu is showed and opened before being attached to a <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a>, it will try to auto-attach itself to the closest sibling object that is or inherits <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a>, if any exists. This behaviour is intended for special usecases; normally you will want to explicitly specify the desired <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a> with <a href="qtwindowlistmenu.html#attachToMdiArea">attachToMdiArea</a>().</p>
+<p>See also <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a>, <a href="http://qt.nokia.com/doc/4.5/qmdisubwindow.html">QMdiSubWindow</a>, <a href="http://qt.nokia.com/doc/4.5/qmenubar.html">QMenuBar</a>, and <a href="http://qt.nokia.com/doc/4.5/qaction.html">QAction</a>.</p>
+<hr />
+<h2>Member Type Documentation</h2>
+<h3 class="fn"><a name="StandardAction-enum"></a>enum QtWindowListMenu::StandardAction</h3>
+<p>This enum specifies the standard menu items of a <a href="qtwindowlistmenu.html">QtWindowListMenu</a>.</p>
+<p><table border="1" cellpadding="2" cellspacing="1" width="100%">
+<tr><th width="25%">Constant</th><th width="15%">Value</th><th width="60%">Description</th></tr>
+<tr><td valign="top"><tt>QtWindowListMenu::CloseAction</tt></td><td align="center" valign="top"><tt>0</tt></td><td valign="top">Ref. <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html#closeActiveSubWindow">QMdiArea::closeActiveSubWindow</a>()</td></tr>
+<tr><td valign="top"><tt>QtWindowListMenu::CloseAllAction</tt></td><td align="center" valign="top"><tt>1</tt></td><td valign="top">Ref. <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html#closeAllSubWindows">QMdiArea::closeAllSubWindows</a>()</td></tr>
+<tr><td valign="top"><tt>QtWindowListMenu::TileAction</tt></td><td align="center" valign="top"><tt>3</tt></td><td valign="top">Ref. <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html#tileSubWindows">QMdiArea::tileSubWindows</a>()</td></tr>
+<tr><td valign="top"><tt>QtWindowListMenu::CascadeAction</tt></td><td align="center" valign="top"><tt>4</tt></td><td valign="top">Ref. <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html#cascadeSubWindows">QMdiArea::cascadeSubWindows</a>()</td></tr>
+<tr><td valign="top"><tt>QtWindowListMenu::NextAction</tt></td><td align="center" valign="top"><tt>6</tt></td><td valign="top">Ref. <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html#activateNextSubWindow">QMdiArea::activateNextSubWindow</a>()</td></tr>
+<tr><td valign="top"><tt>QtWindowListMenu::PrevAction</tt></td><td align="center" valign="top"><tt>7</tt></td><td valign="top">Ref. <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html#activatePreviousSubWindow">QMdiArea::activatePreviousSubWindow</a>()</td></tr>
+</table></p>
+<p>See also <a href="qtwindowlistmenu.html#standardAction">standardAction</a>().</p>
+<hr />
+<h2>Member Function Documentation</h2>
+<h3 class="fn"><a name="QtWindowListMenu"></a>QtWindowListMenu::QtWindowListMenu ( <a href="http://qt.nokia.com/doc/4.5/qwidget.html">QWidget</a> * <i>parent</i> = 0 )</h3>
+<p>Constructs a <a href="qtwindowlistmenu.html">QtWindowListMenu</a> object. The <i>parent</i> parameter is passed to the <a href="http://qt.nokia.com/doc/4.5/qmenu.html">QMenu</a> constructor. Although this parameter has the conventional default of 0, you will normally want to explicitly provide a parent object, since the later adding of this menu object to an action container (e.g&#x2e; <a href="http://qt.nokia.com/doc/4.5/qmenubar.html">QMenuBar</a>) does not cause a reparenting. The container is normally the natural choice for <i>parent</i>.</p>
+<h3 class="fn"><a name="activateWindow"></a>void QtWindowListMenu::activateWindow ( <a href="http://qt.nokia.com/doc/4.5/qaction.html">QAction</a> * <i>act</i> )&nbsp;&nbsp;<tt> [protected slot]</tt></h3>
+<p>This slot is executed when the user selects one of the subwindow navigation actions, given in <i>act</i>. It causes the corresponding subwindow in the attached <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a> object to be activated.</p>
+<h3 class="fn"><a name="attachToMdiArea"></a>void QtWindowListMenu::attachToMdiArea ( <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a> * <i>mdiArea</i> )&nbsp;&nbsp;<tt> [virtual]</tt></h3>
+<p>Instructs this menu to display navigation actions for the <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a> <i>mdiArea</i>. This should be done before this menu is shown.</p>
+<p>Specifying a 0 <i>mdiArea</i> is meaningless and will generate a warning.</p>
+<p>For special usecases, see the note about auto-attachment in the class description.</p>
+<h3 class="fn"><a name="attachedMdiArea"></a><a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a> * QtWindowListMenu::attachedMdiArea () const</h3>
+<p>Returns the <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a> this menu is currently attached to, or 0 if not yet attached.</p>
+<p>See also <a href="qtwindowlistmenu.html#attachToMdiArea">attachToMdiArea</a>().</p>
+<h3 class="fn"><a name="defaultIcon"></a><a href="http://qt.nokia.com/doc/4.5/qicon.html">QIcon</a> QtWindowListMenu::defaultIcon () const</h3>
+<p>Returns the default icon for the subwindow navigation items in this <a href="qtwindowlistmenu.html">QtWindowListMenu</a>. This will be a null icon if none has been explicitly set.</p>
+<p>See also <a href="qtwindowlistmenu.html#setDefaultIcon">setDefaultIcon</a>().</p>
+<h3 class="fn"><a name="setDefaultIcon"></a>void QtWindowListMenu::setDefaultIcon ( const <a href="http://qt.nokia.com/doc/4.5/qicon.html">QIcon</a> &amp; <i>icon</i> )</h3>
+<p>Sets <i>icon</i> as the default icon for the subwindow navigation items in this <a href="qtwindowlistmenu.html">QtWindowListMenu</a>. If <i>icon</i> is a null icon, then the default icon will be cleared.</p>
+<p>See also <a href="qtwindowlistmenu.html#defaultIcon">defaultIcon</a>().</p>
+<h3 class="fn"><a name="setWindowIcon"></a>void QtWindowListMenu::setWindowIcon ( const <a href="http://qt.nokia.com/doc/4.5/qmdisubwindow.html">QMdiSubWindow</a> * <i>window</i>, const <a href="http://qt.nokia.com/doc/4.5/qicon.html">QIcon</a> &amp; <i>icon</i> )</h3>
+<p>Sets <i>icon</i> as the icon of the menu item corresponding to the mdi subwindow <i>window</i>. If <i>icon</i> is a null icon, the current item icon will be cleared.</p>
+<p>See also <a href="qtwindowlistmenu.html#windowIcon">windowIcon</a>().</p>
+<h3 class="fn"><a name="standardAction"></a><a href="http://qt.nokia.com/doc/4.5/qaction.html">QAction</a> * QtWindowListMenu::standardAction ( <a href="qtwindowlistmenu.html#StandardAction-enum">StandardAction</a> <i>item</i> ) const</h3>
+<p>Returns a pointer to the standard navigation action of this menu specified by <i>item</i>. This can be used to customize the look, shortcut, tool tip, etc. of this item, or to provide alternative access to it through a tool button etc.</p>
+<p>The returned object is owned by this <a href="qtwindowlistmenu.html">QtWindowListMenu</a>, and must not be deleted. If you want <a href="qtwindowlistmenu.html">QtWindowListMenu</a> to not display this action, set its &quot;visible&quot; property to false.</p>
+<h3 class="fn"><a name="syncWithMdiArea"></a>void QtWindowListMenu::syncWithMdiArea ()&nbsp;&nbsp;<tt> [virtual protected slot]</tt></h3>
+<p>This slot is executed immediately prior to each opening of this menu. It removes the previous subwindow navigation actions and adds new ones according to the current state of the attached <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a>.</p>
+<h3 class="fn"><a name="windowDestroyed"></a>void QtWindowListMenu::windowDestroyed ( <a href="http://qt.nokia.com/doc/4.5/qobject.html">QObject</a> * <i>obj</i> )&nbsp;&nbsp;<tt> [protected slot]</tt></h3>
+<p>This slot is executed whenever a subwindow (<i>obj</i>) of the attached <a href="http://qt.nokia.com/doc/4.5/qmdiarea.html">QMdiArea</a>, for which an icon has been, is deleted. It clears that icon.</p>
+<h3 class="fn"><a name="windowIcon"></a><a href="http://qt.nokia.com/doc/4.5/qicon.html">QIcon</a> QtWindowListMenu::windowIcon ( const <a href="http://qt.nokia.com/doc/4.5/qmdisubwindow.html">QMdiSubWindow</a> * <i>window</i> ) const</h3>
+<p>Returns the icon of the menu item corresponding to the mdi subwindow <i>window</i>. This will be a null icon if none has been explicitly set.</p>
+<p>See also <a href="qtwindowlistmenu.html#setWindowIcon">setWindowIcon</a>().</p>
+<p /><address><hr /><div align="center">
+<table width="100%" cellspacing="0" border="0"><tr class="address">
+<td width="30%" align="left">Copyright &copy; 2009 Nokia Corporation and/or its subsidiary(-ies)</td>
+<td width="40%" align="center"><a href="http://qt.nokia.com/doc/trademarks.html">Trademarks</a></td>
+<td width="30%" align="right"><div align="right">Qt Solutions</div></td>
+</tr></table></div></address></body>
+</html>

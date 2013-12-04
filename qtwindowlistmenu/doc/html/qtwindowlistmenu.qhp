@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>com.nokia.qtsolutions.qtwindowlistmenu_2.2</namespace>
+    <virtualFolder>qdoc</virtualFolder>
+    <customFilter name="Qt Solutions: Window Menu">
+        <filterAttribute>qt</filterAttribute>
+        <filterAttribute>qtwindowlistmenu</filterAttribute>
+        <filterAttribute>solutions</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>qt</filterAttribute>
+        <filterAttribute>qtwindowlistmenu</filterAttribute>
+        <filterAttribute>solutions</filterAttribute>
+        <toc>
+            <section ref="index.html" title="Qt Solutions: Window Menu Documentation">
+                <section ref="index.html" title="Window Menu"/>
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="QtWindowListMenu" id="QtWindowListMenu" ref="qtwindowlistmenu.html"/>
+            <keyword name="QtWindowListMenu::StandardAction" id="QtWindowListMenu::StandardAction" ref="qtwindowlistmenu.html#StandardAction-enum"/>
+            <keyword name="QtWindowListMenu::CloseAction" id="QtWindowListMenu::CloseAction" ref="qtwindowlistmenu.html#StandardAction-enum"/>
+            <keyword name="QtWindowListMenu::CloseAllAction" id="QtWindowListMenu::CloseAllAction" ref="qtwindowlistmenu.html#StandardAction-enum"/>
+            <keyword name="QtWindowListMenu::TileAction" id="QtWindowListMenu::TileAction" ref="qtwindowlistmenu.html#StandardAction-enum"/>
+            <keyword name="QtWindowListMenu::CascadeAction" id="QtWindowListMenu::CascadeAction" ref="qtwindowlistmenu.html#StandardAction-enum"/>
+            <keyword name="QtWindowListMenu::NextAction" id="QtWindowListMenu::NextAction" ref="qtwindowlistmenu.html#StandardAction-enum"/>
+            <keyword name="QtWindowListMenu::PrevAction" id="QtWindowListMenu::PrevAction" ref="qtwindowlistmenu.html#StandardAction-enum"/>
+            <keyword name="activateWindow" id="QtWindowListMenu::activateWindow" ref="qtwindowlistmenu.html#activateWindow"/>
+            <keyword name="addTo" id="QtWindowListMenu::addTo" ref="qtwindowlistmenu-obsolete.html#addTo"/>
+            <keyword name="attachToMdiArea" id="QtWindowListMenu::attachToMdiArea" ref="qtwindowlistmenu.html#attachToMdiArea"/>
+            <keyword name="attachedMdiArea" id="QtWindowListMenu::attachedMdiArea" ref="qtwindowlistmenu.html#attachedMdiArea"/>
+            <keyword name="defaultIcon" id="QtWindowListMenu::defaultIcon" ref="qtwindowlistmenu.html#defaultIcon"/>
+            <keyword name="setCascadeIcon" id="QtWindowListMenu::setCascadeIcon" ref="qtwindowlistmenu-obsolete.html#setCascadeIcon"/>
+            <keyword name="setCloseAllIcon" id="QtWindowListMenu::setCloseAllIcon" ref="qtwindowlistmenu-obsolete.html#setCloseAllIcon"/>
+            <keyword name="setCloseIcon" id="QtWindowListMenu::setCloseIcon" ref="qtwindowlistmenu-obsolete.html#setCloseIcon"/>
+            <keyword name="setDefaultIcon" id="QtWindowListMenu::setDefaultIcon" ref="qtwindowlistmenu.html#setDefaultIcon"/>
+            <keyword name="setTileIcon" id="QtWindowListMenu::setTileIcon" ref="qtwindowlistmenu-obsolete.html#setTileIcon"/>
+            <keyword name="setWindowIcon" id="QtWindowListMenu::setWindowIcon" ref="qtwindowlistmenu.html#setWindowIcon"/>
+            <keyword name="standardAction" id="QtWindowListMenu::standardAction" ref="qtwindowlistmenu.html#standardAction"/>
+            <keyword name="syncWithMdiArea" id="QtWindowListMenu::syncWithMdiArea" ref="qtwindowlistmenu.html#syncWithMdiArea"/>
+            <keyword name="windowDestroyed" id="QtWindowListMenu::windowDestroyed" ref="qtwindowlistmenu.html#windowDestroyed"/>
+            <keyword name="windowIcon" id="QtWindowListMenu::windowIcon" ref="qtwindowlistmenu.html#windowIcon"/>
+            <keyword name="Window Menu" id="Window Menu" ref="index.html"/>
+        </keywords>
+        <files>
+            <file>index.html</file>
+            <file>qtwindowlistmenu.html</file>
+            <file>images/windowlist.png</file>
+            <file>images/windowlist.png</file>
+            <file>classic.css</file>
+            <file>images/qt-logo.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

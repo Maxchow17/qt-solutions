@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- qtlibxmlreader-2.1_1-opensource/doc/overview.qdoc -->
+<head>
+  <title>QtLibxmlReader overview</title>
+  <link href="classic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="left" valign="top" width="32"><img src="images/qt-logo.png" align="left" width="57" height="67" border="0" /></td>
+<td width="1">&nbsp;&nbsp;</td><td class="postheader" valign="center"><a href="index.html"><font color="#004faf">Home</font></a></td>
+</tr></table><h1 class="title">QtLibxmlReader overview<br /><span class="subtitle"></span>
+</h1>
+<p><a href="qtlibxmlreader.html">QtLibxmlReader</a> is a SAX2 parser. Like <tt>QXmlSimpleReader</tt>, it inherits <tt>QXmlReader</tt> and therefore Qt's SAX API. Unlike <tt>QXmlSimpleReader</tt>, <tt>QtLibxmlReader</tt> uses <tt>libxml2</tt> to do the actual parsing.</p>
+<ul>
+<li><a href="libxml2.html">Notes on libxml2</a></li>
+<li><a href="testxml.html">Using testxml to compare how xml files are parsed with QtLibxmlReader and QXmlSimpleReader</a></li>
+</ul>
+<p>For the most part, <tt>QtLibxmlReader</tt> behaves just like <tt>QXmlSimpleReader</tt>. In particular, you can reuse your <tt>QXml*Handler</tt> objects.</p>
+<p>The following differences were noted during testing:</p>
+<p><table align="center" cellpadding="2" cellspacing="1" border="0">
+<thead><tr valign="top" class="qt-style"><th><tt>QXmlSimpleReader</tt></th><th><tt>QtLibxmlReader</tt></th></tr></thead>
+<tr valign="top" class="odd"><td>Calls <tt>QContentHandler::skippedEntity()</tt> for every reference to an external entity, unless a <tt>QXmlEntityResolver</tt> is created to load it.</td><td>If the <tt>NOENT</tt> feature is set, loads external entities from the local filesystem, or from the network via HTTP or FTP. If the <tt>NOENT</tt> feature is not set, reports external entity references with <tt>QContentHandler::skippedEntity()</tt>. In either case internal entity references are replaced. Does not support <tt>QXmlEntityResolver</tt>.</td></tr>
+<tr valign="top" class="even"><td>The type and valueDefault arguments passed to <tt>QXmlDeclHandler::attributeDecl()</tt> are always empty.</td><td>The type and valueDefault arguments passed to <tt>QXmlDeclHandler::attributeDecl()</tt> are set correctly.</td></tr>
+<tr valign="top" class="odd"><td>Merges a sequence of entity references into a single call to <tt>QXmlContentHandler::characters()</tt>, which is passed the replacement text of the whole sequence.</td><td>Issues a separate call to <tt>XmlContentHandler::characters()</tt> for each entity reference, passing in the replacement text for that single entity.</td></tr>
+<tr valign="top" class="even"><td>Calls <tt>QXmlContentHandler::processingInstruction()</tt> for all processing instructions.</td><td>Calls <tt>QXmlContentHandler::processingInstruction()</tt> for all processing instructions except <tt>&lt;?xml</tt> ..&#x2e; <tt>?&gt;</tt>.</td></tr>
+<tr valign="top" class="odd"><td>Substitues entity references with their replacement text in attribute values.</td><td>Does not substitute entity references in attribute values.</td></tr>
+<tr valign="top" class="even"><td>Sequences of whitespace characters in attribute values are reported unchanged.</td><td>Sequences of whitespace characters in attribute values are replaced with a single space.</td></tr>
+<tr valign="top" class="odd"><td>When calling <tt>QXmlContentHandler::characters()</tt>, <tt>&quot;\r&quot;</tt> and <tt>&quot;\r\n&quot;</tt> are reported unchanged.</td><td>When calling <tt>QXmlContentHandler::characters()</tt>, <tt>&quot;\r&quot;</tt> and <tt>&quot;\r\n&quot;</tt> are replaced with <tt>&quot;\n&quot;</tt>.</td></tr>
+<tr valign="top" class="even"><td>Only reports attributes that are present in an element.</td><td>If an element has a default attribute defined in the DTD, this attribute is always reported.</td></tr>
+<tr valign="top" class="odd"><td><tt>setFeature()</tt> manipulates <tt>QXmlSimpleReader</tt>'s features.</td><td><tt>setFeature()</tt> manipulates a subset of <tt>libxml2</tt>'s features.</td></tr>
+<tr valign="top" class="even"><td>Supports incremental parsing.</td><td>Does not support incremental parsing.</td></tr>
+</table></p>
+<p /><address><hr /><div align="center">
+<table width="100%" cellspacing="0" border="0"><tr class="address">
+<td width="30%" align="left">Copyright &copy; 2009 Nokia Corporation and/or its subsidiary(-ies)</td>
+<td width="40%" align="center"><a href="http://qt.nokia.com/doc/trademarks.html">Trademarks</a></td>
+<td width="30%" align="right"><div align="right">Qt Solutions</div></td>
+</tr></table></div></address></body>
+</html>

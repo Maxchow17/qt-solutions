@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>com.nokia.qtsolutions.qtspellcheckingtextedit_2.1</namespace>
+    <virtualFolder>qdoc</virtualFolder>
+    <customFilter name="Qt Solutions: Spellchecking TextEdit">
+        <filterAttribute>qt</filterAttribute>
+        <filterAttribute>solutions</filterAttribute>
+        <filterAttribute>qtspellcheckingtextedit</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>qt</filterAttribute>
+        <filterAttribute>solutions</filterAttribute>
+        <filterAttribute>qtspellcheckingtextedit</filterAttribute>
+        <toc>
+            <section ref="index.html" title="Qt Solutions: Spellchecking TextEdit Documentation">
+                <section ref="index.html" title="Spellchecking TextEdit"/>
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="QtSpellCheckingTextEdit" id="QtSpellCheckingTextEdit" ref="qtspellcheckingtextedit.html"/>
+            <keyword name="Spellchecking TextEdit" id="Spellchecking TextEdit" ref="index.html"/>
+        </keywords>
+        <files>
+            <file>images/spellcheck.png</file>
+            <file>index.html</file>
+            <file>qtspellcheckingtextedit.html</file>
+            <file>images/spellcheck.png</file>
+            <file>classic.css</file>
+            <file>images/qt-logo.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

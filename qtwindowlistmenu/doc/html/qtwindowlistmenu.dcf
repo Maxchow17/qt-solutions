@@ -1,0 +1,33 @@
+<!DOCTYPE DCF>
+<DCF ref="index.html" icon="qtwindowlistmenu.png" imagedir="../../gif" title="Qt Solutions: Window Menu Documentation">
+<section ref="classes.html" title="Classes">
+    <section ref="qtwindowlistmenu.html" title="QtWindowListMenu Class Reference">
+        <keyword ref="qtwindowlistmenu.html">QtWindowListMenu</keyword>
+        <keyword ref="qtwindowlistmenu.html#StandardAction-enum">StandardAction</keyword>
+        <keyword ref="qtwindowlistmenu.html#StandardAction-enum">QtWindowListMenu::CascadeAction</keyword>
+        <keyword ref="qtwindowlistmenu.html#StandardAction-enum">QtWindowListMenu::TileAction</keyword>
+        <keyword ref="qtwindowlistmenu.html#StandardAction-enum">QtWindowListMenu::CloseAllAction</keyword>
+        <keyword ref="qtwindowlistmenu.html#StandardAction-enum">QtWindowListMenu::CloseAction</keyword>
+        <keyword ref="qtwindowlistmenu.html#StandardAction-enum">QtWindowListMenu::NextAction</keyword>
+        <keyword ref="qtwindowlistmenu.html#StandardAction-enum">QtWindowListMenu::PrevAction</keyword>
+        <keyword ref="qtwindowlistmenu.html#activateWindow">activateWindow</keyword>
+        <keyword ref="qtwindowlistmenu.html#attachToMdiArea">attachToMdiArea</keyword>
+        <keyword ref="qtwindowlistmenu.html#attachedMdiArea">attachedMdiArea</keyword>
+        <keyword ref="qtwindowlistmenu.html#defaultIcon">defaultIcon</keyword>
+        <keyword ref="qtwindowlistmenu.html#setDefaultIcon">setDefaultIcon</keyword>
+        <keyword ref="qtwindowlistmenu.html#setWindowIcon">setWindowIcon</keyword>
+        <keyword ref="qtwindowlistmenu.html#standardAction">standardAction</keyword>
+        <keyword ref="qtwindowlistmenu.html#syncWithMdiArea">syncWithMdiArea</keyword>
+        <keyword ref="qtwindowlistmenu.html#windowDestroyed">windowDestroyed</keyword>
+        <keyword ref="qtwindowlistmenu.html#windowIcon">windowIcon</keyword>
+        <section ref="qtwindowlistmenu-members.html" title="List of all members"/>
+        <section ref="qtwindowlistmenu-obsolete.html" title="Obsolete members"/>
+    </section>
+</section>
+<section ref="overviews.html" title="Overviews">
+    <section ref="index.html" title="Window Menu">
+        <keyword ref="index.html">Window Menu</keyword>
+    </section>
+</section>
+<section ref="examples.html" title="Tutorial &amp; Examples"/>
+</DCF>

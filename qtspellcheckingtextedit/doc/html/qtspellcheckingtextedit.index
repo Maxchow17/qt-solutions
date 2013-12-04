@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QDOCINDEX>
+<INDEX url="" title="Qt Solutions: Spellchecking TextEdit Documentation" version="">
+    <namespace access="public" threadsafety="unspecified" status="commendable" name="" href="" location="" module="">
+        <class access="public" threadsafety="unspecified" status="commendable" name="QtSpellCheckingTextEdit" href="qtspellcheckingtextedit.html" location="qtspellcheckingtextedit.h" bases="QTextEdit" module="">
+            <function access="public" threadsafety="unspecified" status="commendable" name="QtSpellCheckingTextEdit" fullname="QtSpellCheckingTextEdit::QtSpellCheckingTextEdit" href="qtspellcheckingtextedit.html#QtSpellCheckingTextEdit" location="qtspellcheckingtextedit.h" virtual="non" meta="constructor" const="false" static="false" overload="false" type="" signature="QtSpellCheckingTextEdit(QWidget * parent)">
+                <parameter left="QWidget *" right="" name="parent" default="0"/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="QtSpellCheckingTextEdit" fullname="QtSpellCheckingTextEdit::QtSpellCheckingTextEdit" href="qtspellcheckingtextedit.html#QtSpellCheckingTextEdit-2" location="qtspellcheckingtextedit.h" virtual="non" meta="constructor" const="false" static="false" overload="true" overload-number="2" type="" signature="QtSpellCheckingTextEdit(const QString &amp; text, QWidget * parent)">
+                <parameter left="const QString &amp;" right="" name="text" default=""/>
+                <parameter left="QWidget *" right="" name="parent" default="0"/>
+            </function>
+        </class>
+        <page access="public" status="commendable" name="index.html" href="index.html" subtype="page" title="Spellchecking TextEdit" fulltitle="Spellchecking TextEdit" subtitle="" location="index.qdoc">
+            <contents name="description" title="Description" level="1"/>
+            <contents name="classes" title="Classes" level="1"/>
+            <contents name="tested-platforms" title="Tested platforms" level="1"/>
+            <contents name="unsupported-platforms" title="Unsupported platforms" level="1"/>
+            <contents name="screenshots" title="Screenshots" level="1"/>
+        </page>
+    </namespace>
+</INDEX>

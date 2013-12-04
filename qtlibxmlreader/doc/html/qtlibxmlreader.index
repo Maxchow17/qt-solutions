@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QDOCINDEX>
+<INDEX url="" title="Qt Solutions: libxml2 reader Documentation" version="">
+    <namespace access="public" threadsafety="unspecified" status="commendable" name="" href="" location="" module="">
+        <class access="public" threadsafety="unspecified" status="commendable" name="QtLibxmlReader" href="qtlibxmlreader.html" location="qtlibxmlreader.h" bases="QXmlReader" module="">
+            <function access="public" threadsafety="unspecified" status="commendable" name="QtLibxmlReader" fullname="QtLibxmlReader::QtLibxmlReader" href="qtlibxmlreader.html#QtLibxmlReader" location="qtlibxmlreader.h" virtual="non" meta="constructor" const="false" static="false" overload="false" type="" signature="QtLibxmlReader()"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="~QtLibxmlReader" fullname="QtLibxmlReader::~QtLibxmlReader" href="qtlibxmlreader.html#dtor.QtLibxmlReader" location="qtlibxmlreader.h" virtual="impure" meta="destructor" const="false" static="false" overload="false" type="" signature="~QtLibxmlReader()"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="feature" fullname="QtLibxmlReader::feature" href="qtlibxmlreader.html#feature" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="bool" signature="feature(const QString &amp; name, bool * ok) const">
+                <parameter left="const QString &amp;" right="" name="name" default=""/>
+                <parameter left="bool *" right="" name="ok" default="0"/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setFeature" fullname="QtLibxmlReader::setFeature" href="qtlibxmlreader.html#setFeature" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="setFeature(const QString &amp; name, bool value)">
+                <parameter left="const QString &amp;" right="" name="name" default=""/>
+                <parameter left="bool" right="" name="value" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="hasFeature" fullname="QtLibxmlReader::hasFeature" href="qtlibxmlreader.html#hasFeature" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="bool" signature="hasFeature(const QString &amp; name) const">
+                <parameter left="const QString &amp;" right="" name="name" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="property" fullname="QtLibxmlReader::property" href="qtlibxmlreader.html#property" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="void *" signature="property(const QString &amp; name, bool * ok) const">
+                <parameter left="const QString &amp;" right="" name="name" default=""/>
+                <parameter left="bool *" right="" name="ok" default="0"/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setProperty" fullname="QtLibxmlReader::setProperty" href="qtlibxmlreader.html#setProperty" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="setProperty(const QString &amp; name, void * value)">
+                <parameter left="const QString &amp;" right="" name="name" default=""/>
+                <parameter left="void *" right="" name="value" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="hasProperty" fullname="QtLibxmlReader::hasProperty" href="qtlibxmlreader.html#hasProperty" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="bool" signature="hasProperty(const QString &amp; name) const">
+                <parameter left="const QString &amp;" right="" name="name" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setEntityResolver" fullname="QtLibxmlReader::setEntityResolver" href="qtlibxmlreader.html#setEntityResolver" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="setEntityResolver(QXmlEntityResolver * resolver)">
+                <parameter left="QXmlEntityResolver *" right="" name="resolver" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="entityResolver" fullname="QtLibxmlReader::entityResolver" href="qtlibxmlreader.html#entityResolver" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="QXmlEntityResolver *" signature="entityResolver() const"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setDTDHandler" fullname="QtLibxmlReader::setDTDHandler" href="qtlibxmlreader.html#setDTDHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="setDTDHandler(QXmlDTDHandler * handler)">
+                <parameter left="QXmlDTDHandler *" right="" name="handler" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="DTDHandler" fullname="QtLibxmlReader::DTDHandler" href="qtlibxmlreader.html#DTDHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="QXmlDTDHandler *" signature="DTDHandler() const"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setContentHandler" fullname="QtLibxmlReader::setContentHandler" href="qtlibxmlreader.html#setContentHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="setContentHandler(QXmlContentHandler * handler)">
+                <parameter left="QXmlContentHandler *" right="" name="handler" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="contentHandler" fullname="QtLibxmlReader::contentHandler" href="qtlibxmlreader.html#contentHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="QXmlContentHandler *" signature="contentHandler() const"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setErrorHandler" fullname="QtLibxmlReader::setErrorHandler" href="qtlibxmlreader.html#setErrorHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="setErrorHandler(QXmlErrorHandler * handler)">
+                <parameter left="QXmlErrorHandler *" right="" name="handler" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="errorHandler" fullname="QtLibxmlReader::errorHandler" href="qtlibxmlreader.html#errorHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="QXmlErrorHandler *" signature="errorHandler() const"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setLexicalHandler" fullname="QtLibxmlReader::setLexicalHandler" href="qtlibxmlreader.html#setLexicalHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="setLexicalHandler(QXmlLexicalHandler * handler)">
+                <parameter left="QXmlLexicalHandler *" right="" name="handler" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="lexicalHandler" fullname="QtLibxmlReader::lexicalHandler" href="qtlibxmlreader.html#lexicalHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="QXmlLexicalHandler *" signature="lexicalHandler() const"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setDeclHandler" fullname="QtLibxmlReader::setDeclHandler" href="qtlibxmlreader.html#setDeclHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="setDeclHandler(QXmlDeclHandler * handler)">
+                <parameter left="QXmlDeclHandler *" right="" name="handler" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="declHandler" fullname="QtLibxmlReader::declHandler" href="qtlibxmlreader.html#declHandler" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="true" static="false" overload="false" type="QXmlDeclHandler *" signature="declHandler() const"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="parse" fullname="QtLibxmlReader::parse" href="qtlibxmlreader.html#parse" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="bool" signature="parse(const QXmlInputSource * input)">
+                <parameter left="const QXmlInputSource *" right="" name="input" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="obsolete" name="parse" fullname="QtLibxmlReader::parse" href="qtlibxmlreader-obsolete.html#parse-2" location="qtlibxmlreader.h" virtual="impure" meta="plain" const="false" static="false" overload="true" overload-number="2" type="bool" signature="parse(const QXmlInputSource &amp; input)">
+                <parameter left="const QXmlInputSource &amp;" right="" name="input" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="parse" fullname="QtLibxmlReader::parse" href="qtlibxmlreader.html#parse-3" location="qtlibxmlreader.h" virtual="non" meta="plain" const="false" static="false" overload="true" overload-number="3" type="bool" signature="parse(const QString &amp; uri)">
+                <parameter left="const QString &amp;" right="" name="uri" default=""/>
+            </function>
+        </class>
+        <page access="public" status="commendable" name="overview.html" href="overview.html" subtype="page" title="QtLibxmlReader overview" fulltitle="QtLibxmlReader overview" subtitle="" location="overview.qdoc"/>
+        <page access="public" status="commendable" name="libxml2.html" href="libxml2.html" subtype="page" title="libxml2" fulltitle="libxml2" subtitle="" location="libxml2.qdoc"/>
+        <page access="public" status="commendable" name="index.html" href="index.html" subtype="page" title="libxml2 reader" fulltitle="libxml2 reader" subtitle="" location="index.qdoc">
+            <contents name="description" title="Description" level="1"/>
+            <contents name="overview" title="Overview" level="1"/>
+            <contents name="classes" title="Classes" level="1"/>
+            <contents name="examples" title="Examples" level="1"/>
+            <contents name="tested-platforms" title="Tested platforms" level="1"/>
+        </page>
+        <page access="public" status="commendable" name="testxml.html" href="testxml.html" subtype="page" title="testxml" fulltitle="testxml" subtitle="" location="testxml.qdoc"/>
+    </namespace>
+</INDEX>

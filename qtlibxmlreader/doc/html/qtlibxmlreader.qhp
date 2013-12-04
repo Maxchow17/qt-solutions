@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>com.nokia.qtsolutions.qtlibxmlreader_2.1</namespace>
+    <virtualFolder>qdoc</virtualFolder>
+    <customFilter name="Qt Solutions: libxml2 reader">
+        <filterAttribute>qt</filterAttribute>
+        <filterAttribute>solutions</filterAttribute>
+        <filterAttribute>qtlibxmlreader</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>qt</filterAttribute>
+        <filterAttribute>solutions</filterAttribute>
+        <filterAttribute>qtlibxmlreader</filterAttribute>
+        <toc>
+            <section ref="index.html" title="Qt Solutions: libxml2 reader Documentation">
+                <section ref="overview.html" title="QtLibxmlReader overview"/>
+                <section ref="libxml2.html" title="libxml2"/>
+                <section ref="index.html" title="libxml2 reader"/>
+                <section ref="testxml.html" title="testxml"/>
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="QtLibxmlReader" id="QtLibxmlReader" ref="qtlibxmlreader.html"/>
+            <keyword name="DTDHandler" id="QtLibxmlReader::DTDHandler" ref="qtlibxmlreader.html#DTDHandler"/>
+            <keyword name="contentHandler" id="QtLibxmlReader::contentHandler" ref="qtlibxmlreader.html#contentHandler"/>
+            <keyword name="declHandler" id="QtLibxmlReader::declHandler" ref="qtlibxmlreader.html#declHandler"/>
+            <keyword name="entityResolver" id="QtLibxmlReader::entityResolver" ref="qtlibxmlreader.html#entityResolver"/>
+            <keyword name="errorHandler" id="QtLibxmlReader::errorHandler" ref="qtlibxmlreader.html#errorHandler"/>
+            <keyword name="feature" id="QtLibxmlReader::feature" ref="qtlibxmlreader.html#feature"/>
+            <keyword name="hasFeature" id="QtLibxmlReader::hasFeature" ref="qtlibxmlreader.html#hasFeature"/>
+            <keyword name="hasProperty" id="QtLibxmlReader::hasProperty" ref="qtlibxmlreader.html#hasProperty"/>
+            <keyword name="lexicalHandler" id="QtLibxmlReader::lexicalHandler" ref="qtlibxmlreader.html#lexicalHandler"/>
+            <keyword name="parse" id="QtLibxmlReader::parse" ref="qtlibxmlreader.html#parse"/>
+            <keyword name="property" id="QtLibxmlReader::property" ref="qtlibxmlreader.html#property"/>
+            <keyword name="setContentHandler" id="QtLibxmlReader::setContentHandler" ref="qtlibxmlreader.html#setContentHandler"/>
+            <keyword name="setDTDHandler" id="QtLibxmlReader::setDTDHandler" ref="qtlibxmlreader.html#setDTDHandler"/>
+            <keyword name="setDeclHandler" id="QtLibxmlReader::setDeclHandler" ref="qtlibxmlreader.html#setDeclHandler"/>
+            <keyword name="setEntityResolver" id="QtLibxmlReader::setEntityResolver" ref="qtlibxmlreader.html#setEntityResolver"/>
+            <keyword name="setErrorHandler" id="QtLibxmlReader::setErrorHandler" ref="qtlibxmlreader.html#setErrorHandler"/>
+            <keyword name="setFeature" id="QtLibxmlReader::setFeature" ref="qtlibxmlreader.html#setFeature"/>
+            <keyword name="setLexicalHandler" id="QtLibxmlReader::setLexicalHandler" ref="qtlibxmlreader.html#setLexicalHandler"/>
+            <keyword name="setProperty" id="QtLibxmlReader::setProperty" ref="qtlibxmlreader.html#setProperty"/>
+            <keyword name="~QtLibxmlReader" id="QtLibxmlReader::~QtLibxmlReader" ref="qtlibxmlreader.html#dtor.QtLibxmlReader"/>
+            <keyword name="QtLibxmlReader overview" id="QtLibxmlReader overview" ref="overview.html"/>
+            <keyword name="libxml2" id="libxml2" ref="libxml2.html"/>
+            <keyword name="libxml2 reader" id="libxml2 reader" ref="index.html"/>
+            <keyword name="testxml" id="testxml" ref="testxml.html"/>
+        </keywords>
+        <files>
+            <file>index.html</file>
+            <file>qtlibxmlreader.html</file>
+            <file>libxml2.html</file>
+            <file>overview.html</file>
+            <file>testxml.html</file>
+            <file>classic.css</file>
+            <file>images/qt-logo.png</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

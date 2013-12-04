@@ -1,0 +1,40 @@
+/*!
+	\page index.html
+	\title libxml2 reader
+
+    	\section1 Description
+	
+            A SAX2 parser based on libxml2, with a QXmlReader interface.
+        
+
+	
+            QtLibxmlReader is a SAX2 parser. Like QXmlSimpleReader, it inherits QXmlReader and therefore Qt's SAX API. Unlike QXmlSimpleReader, QtLibxmlReader uses libxml2 to do the actual parsing.
+        
+
+    	
+        \section1 Overview
+	    \list
+	 \i  \link overview.html Overview \endlink \endlist
+	
+	\section1 Classes
+	    \list
+	 \i  QtLibxmlReader\endlist
+	
+        \section1 Examples
+	    \list
+	 \i  \link testxml.html testxml \endlink \endlist
+	
+    
+
+    	
+
+    	
+    		\section1 Tested platforms
+		\list
+		\i Qt 4.4, 4.5 / Linux / gcc
+		    \endlist
+
+    	
+
+	
+	*/

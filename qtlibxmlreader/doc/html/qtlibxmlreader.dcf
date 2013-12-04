@@ -1,0 +1,44 @@
+<!DOCTYPE DCF>
+<DCF ref="index.html" icon="qtlibxmlreader.png" imagedir="../../gif" title="Qt Solutions: libxml2 reader Documentation">
+<section ref="classes.html" title="Classes">
+    <section ref="qtlibxmlreader.html" title="QtLibxmlReader Class Reference">
+        <keyword ref="qtlibxmlreader.html">QtLibxmlReader</keyword>
+        <keyword ref="qtlibxmlreader.html#DTDHandler">DTDHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#contentHandler">contentHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#declHandler">declHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#entityResolver">entityResolver</keyword>
+        <keyword ref="qtlibxmlreader.html#errorHandler">errorHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#feature">feature</keyword>
+        <keyword ref="qtlibxmlreader.html#hasFeature">hasFeature</keyword>
+        <keyword ref="qtlibxmlreader.html#hasProperty">hasProperty</keyword>
+        <keyword ref="qtlibxmlreader.html#lexicalHandler">lexicalHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#parse">parse</keyword>
+        <keyword ref="qtlibxmlreader.html#property">property</keyword>
+        <keyword ref="qtlibxmlreader.html#setContentHandler">setContentHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#setDTDHandler">setDTDHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#setDeclHandler">setDeclHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#setEntityResolver">setEntityResolver</keyword>
+        <keyword ref="qtlibxmlreader.html#setErrorHandler">setErrorHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#setFeature">setFeature</keyword>
+        <keyword ref="qtlibxmlreader.html#setLexicalHandler">setLexicalHandler</keyword>
+        <keyword ref="qtlibxmlreader.html#setProperty">setProperty</keyword>
+        <section ref="qtlibxmlreader-members.html" title="List of all members"/>
+        <section ref="qtlibxmlreader-obsolete.html" title="Obsolete members"/>
+    </section>
+</section>
+<section ref="overviews.html" title="Overviews">
+    <section ref="libxml2.html" title="libxml2">
+        <keyword ref="libxml2.html">libxml2</keyword>
+    </section>
+    <section ref="index.html" title="libxml2 reader">
+        <keyword ref="index.html">libxml2 reader</keyword>
+    </section>
+    <section ref="overview.html" title="QtLibxmlReader overview">
+        <keyword ref="overview.html">QtLibxmlReader overview</keyword>
+    </section>
+    <section ref="testxml.html" title="testxml">
+        <keyword ref="testxml.html">testxml</keyword>
+    </section>
+</section>
+<section ref="examples.html" title="Tutorial &amp; Examples"/>
+</DCF>

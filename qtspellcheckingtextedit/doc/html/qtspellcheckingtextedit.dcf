@@ -1,0 +1,15 @@
+<!DOCTYPE DCF>
+<DCF ref="index.html" icon="qtspellcheckingtextedit.png" imagedir="../../gif" title="Qt Solutions: Spellchecking TextEdit Documentation">
+<section ref="classes.html" title="Classes">
+    <section ref="qtspellcheckingtextedit.html" title="QtSpellCheckingTextEdit Class Reference">
+        <keyword ref="qtspellcheckingtextedit.html">QtSpellCheckingTextEdit</keyword>
+        <section ref="qtspellcheckingtextedit-members.html" title="List of all members"/>
+    </section>
+</section>
+<section ref="overviews.html" title="Overviews">
+    <section ref="index.html" title="Spellchecking TextEdit">
+        <keyword ref="index.html">Spellchecking TextEdit</keyword>
+    </section>
+</section>
+<section ref="examples.html" title="Tutorial &amp; Examples"/>
+</DCF>

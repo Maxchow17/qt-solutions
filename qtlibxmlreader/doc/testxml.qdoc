@@ -1,0 +1,127 @@
+/****************************************************************************
+** 
+** Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+** All rights reserved.
+** Contact: Nokia Corporation (qt-info@nokia.com)
+** 
+** This file is part of a Qt Solutions component.
+**
+** Commercial Usage  
+** Licensees holding valid Qt Commercial licenses may use this file in
+** accordance with the Qt Solutions Commercial License Agreement provided
+** with the Software or, alternatively, in accordance with the terms
+** contained in a written agreement between you and Nokia.
+** 
+** GNU Lesser General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU Lesser
+** General Public License version 2.1 as published by the Free Software
+** Foundation and appearing in the file LICENSE.LGPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU Lesser General Public License version 2.1 requirements
+** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+** 
+** In addition, as a special exception, Nokia gives you certain
+** additional rights. These rights are described in the Nokia Qt LGPL
+** Exception version 1.1, included in the file LGPL_EXCEPTION.txt in this
+** package.
+** 
+** GNU General Public License Usage 
+** Alternatively, this file may be used under the terms of the GNU
+** General Public License version 3.0 as published by the Free Software
+** Foundation and appearing in the file LICENSE.GPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU General Public License version 3.0 requirements will be
+** met: http://www.gnu.org/copyleft/gpl.html.
+** 
+** Please note Third Party Software included with Qt Solutions may impose
+** additional restrictions and it is the user's responsibility to ensure
+** that they have met the licensing requirements of the GPL, LGPL, or Qt
+** Solutions Commercial license and the relevant license of the Third
+** Party Software they are using.
+** 
+** If you are unsure which license is appropriate for your use, please
+** contact Nokia at qt-info@nokia.com.
+** 
+****************************************************************************/
+
+/*!
+\page testxml.html
+\title testxml
+
+This package's example directory contains a command-line tool called
+\c{testxml}. This tool is useful if you want to see if there are any
+differences in the way a file is parsed by \c QXmlSimpleReader and by
+\c{QtLibxmlReader}.
+
+\c testxml reads an xml file and parses it first with \c
+QtLibxmlReader, then with \c QXmlSimpleReader. For each parser, \c
+testxml prints out a trace of all activated SAX callbacks and their
+arguments.
+
+\code
+> testxml data.xml
+QtLibxmlReader returned 1
+setDocumentLocator(locator={columnNumber=1, lineNumber=1})
+startDocument()
+   startDTD(name="document", publicId="", systemId="")
+      externalEntityDecl(name="myExternalEntity", publicId="", systemId="2.ent")
+      internatlEntityDecl(name="myInternalEntity", value="vlahuuurg")
+      externalEntityDecl(name="myNetworkEntity", publicId="", systemId="http://osada.com.pl/2net.ent")
+   endDTD()
+   startElement(namespaceURI="", localName="document", qName="document", atts=[])
+      characters(ch="\n    ")
+      characters(ch="vlahuuurg")
+      startElement(namespaceURI="", localName="rike", qName="rike", atts=[])
+         characters(ch="Hello World! :)")
+      endElement(namespaceURI="", localName="rike", qName="rike")
+      characters(ch="\n")
+      startElement(namespaceURI="", localName="rike", qName="rike", atts=[])
+         characters(ch="Hello Networked World! :)")
+      endElement(namespaceURI="", localName="rike", qName="rike")
+      characters(ch="\n")
+      skippedEntity(name="myUndefinedEntity")
+      characters(ch="\n")
+   endElement(namespaceURI="", localName="document", qName="document")
+endDocument()
+
+QtXmlSimpleReader returned 1
+setDocumentLocator(locator={columnNumber=1, lineNumber=1})
+startDocument()
+   processingInstruction(target="xml", data="version = '1.0' encoding = 'UTF-8'")
+   startDTD(name="document", publicId="", systemId="")
+      externalEntityDecl(name="myExternalEntity", publicId="", systemId="2.ent")
+      internatlEntityDecl(name="myInternalEntity", value="vlahuuurg")
+      externalEntityDecl(name="myNetworkEntity", publicId="", systemId="http://osada.com.pl/2net.ent")
+   endDTD()
+   startElement(namespaceURI="", localName="document", qName="document", atts=[])
+      resolveEntity(publicId="", systemId="2.ent", ret={})
+      skippedEntity(name="myExternalEntity")
+      resolveEntity(publicId="", systemId="http://osada.com.pl/2net.ent", ret={})
+      skippedEntity(name="myNetworkEntity")
+      skippedEntity(name="myUndefinedEntity")
+      characters(ch="\n    vlahuuurg\n")
+   endElement(namespaceURI="", localName="document", qName="document")
+endDocument()
+\endcode
+
+The xml file in this example contained:
+
+\code
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document [
+    <!ENTITY myExternalEntity SYSTEM "2.ent">
+    <!ENTITY myInternalEntity "vlahuuurg">
+    <!ENTITY myNetworkEntity SYSTEM "http://osada.com.pl/2net.ent">
+]>
+<document>
+    &myInternalEntity;&myExternalEntity;&myNetworkEntity;&myUndefinedEntity;
+</document>
+\endcode
+
+\c testxml accepts the command line options \c -libxml and \c{-qtxml}:
+if one of these is specified \a testxml will only run the specified
+parser. This is useful if you want to be certain you didn't miss any
+changes, since you can use these to generate separate traces for \c
+QtLibxmlParser and \c QXmlSimpleParser and then diff the results.
+
+*/

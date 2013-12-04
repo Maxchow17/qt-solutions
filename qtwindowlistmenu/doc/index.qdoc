@@ -1,0 +1,42 @@
+/*!
+	\page index.html
+	\title Window Menu
+
+    	\section1 Description
+	
+	    The Window Menu component provides a popup menu that contains a
+	    list of windows that are currently displayed in a QWorkspace.
+	
+
+	
+	    The Window Menu component provides MDI applications with a
+	    menu entry window that shows the available windows and which
+	    window is currently active. It also has entries to close all
+	    windows, to cascade them, and other common functionality.
+	
+
+    	
+    	\section1 Classes
+	    \list
+	 \i  QtWindowListMenu\endlist
+	
+    
+
+    	
+
+    	
+    		\section1 Tested platforms
+		\list
+		\i Qt 4.4, 4.5 / Windows XP / MSVC.NET 2005
+		    \i Qt 4.4, 4.5 / Linux / gcc
+		    \i Qt 4.4, 4.5 / MacOS X 10.5 / gcc
+		    \endlist
+
+    	
+
+	
+		\section1 Screenshots
+
+    		\img windowlist.png
+		    
+	*/

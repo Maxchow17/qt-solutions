@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE QDOCINDEX>
+<INDEX url="" title="Qt Solutions: Window Menu Documentation" version="">
+    <namespace access="public" threadsafety="unspecified" status="commendable" name="" href="" location="" module="">
+        <class access="public" threadsafety="unspecified" status="commendable" name="QtWindowListMenu" href="qtwindowlistmenu.html" location="qtwindowlistmenu.h" bases="QMenu" module="">
+            <function access="public" threadsafety="unspecified" status="commendable" name="QtWindowListMenu" fullname="QtWindowListMenu::QtWindowListMenu" href="qtwindowlistmenu.html#QtWindowListMenu" location="qtwindowlistmenu.h" virtual="non" meta="constructor" const="false" static="false" overload="false" type="" signature="QtWindowListMenu(QWidget * parent)">
+                <parameter left="QWidget *" right="" name="parent" default="0"/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="attachToMdiArea" fullname="QtWindowListMenu::attachToMdiArea" href="qtwindowlistmenu.html#attachToMdiArea" location="qtwindowlistmenu.h" virtual="impure" meta="plain" const="false" static="false" overload="false" type="void" signature="attachToMdiArea(QMdiArea * mdiArea)">
+                <parameter left="QMdiArea *" right="" name="mdiArea" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="attachedMdiArea" fullname="QtWindowListMenu::attachedMdiArea" href="qtwindowlistmenu.html#attachedMdiArea" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="true" static="false" overload="false" type="QMdiArea *" signature="attachedMdiArea() const"/>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setWindowIcon" fullname="QtWindowListMenu::setWindowIcon" href="qtwindowlistmenu.html#setWindowIcon" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="false" static="false" overload="false" type="void" signature="setWindowIcon(const QMdiSubWindow * window, const QIcon &amp; icon)">
+                <parameter left="const QMdiSubWindow *" right="" name="window" default=""/>
+                <parameter left="const QIcon &amp;" right="" name="icon" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="windowIcon" fullname="QtWindowListMenu::windowIcon" href="qtwindowlistmenu.html#windowIcon" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="true" static="false" overload="false" type="QIcon" signature="windowIcon(const QMdiSubWindow * window) const">
+                <parameter left="const QMdiSubWindow *" right="" name="window" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="setDefaultIcon" fullname="QtWindowListMenu::setDefaultIcon" href="qtwindowlistmenu.html#setDefaultIcon" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="false" static="false" overload="false" type="void" signature="setDefaultIcon(const QIcon &amp; icon)">
+                <parameter left="const QIcon &amp;" right="" name="icon" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="commendable" name="defaultIcon" fullname="QtWindowListMenu::defaultIcon" href="qtwindowlistmenu.html#defaultIcon" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="true" static="false" overload="false" type="QIcon" signature="defaultIcon() const"/>
+            <enum access="public" threadsafety="unspecified" status="commendable" name="StandardAction" fullname="QtWindowListMenu::StandardAction" href="qtwindowlistmenu.html#StandardAction-enum" location="qtwindowlistmenu.h">
+                <value name="CloseAction" value="0"/>
+                <value name="CloseAllAction" value="1"/>
+                <value name="TileAction" value="3"/>
+                <value name="CascadeAction" value="4"/>
+                <value name="NextAction" value="6"/>
+                <value name="PrevAction" value="7"/>
+            </enum>
+            <function access="public" threadsafety="unspecified" status="commendable" name="standardAction" fullname="QtWindowListMenu::standardAction" href="qtwindowlistmenu.html#standardAction" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="true" static="false" overload="false" type="QAction *" signature="standardAction(StandardAction item) const">
+                <parameter left="StandardAction" right="" name="item" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="obsolete" name="addTo" fullname="QtWindowListMenu::addTo" href="qtwindowlistmenu-obsolete.html#addTo" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="false" static="false" overload="false" type="QAction *" signature="addTo(const QString &amp; text, QMenuBar * menubar, int idx)">
+                <parameter left="const QString &amp;" right="" name="text" default=""/>
+                <parameter left="QMenuBar *" right="" name="menubar" default=""/>
+                <parameter left="int" right="" name="idx" default="-1"/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="obsolete" name="setCloseIcon" fullname="QtWindowListMenu::setCloseIcon" href="qtwindowlistmenu-obsolete.html#setCloseIcon" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="false" static="false" overload="false" type="void" signature="setCloseIcon(const QIcon &amp; icon)">
+                <parameter left="const QIcon &amp;" right="" name="icon" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="obsolete" name="setCloseAllIcon" fullname="QtWindowListMenu::setCloseAllIcon" href="qtwindowlistmenu-obsolete.html#setCloseAllIcon" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="false" static="false" overload="false" type="void" signature="setCloseAllIcon(const QIcon &amp; icon)">
+                <parameter left="const QIcon &amp;" right="" name="icon" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="obsolete" name="setCascadeIcon" fullname="QtWindowListMenu::setCascadeIcon" href="qtwindowlistmenu-obsolete.html#setCascadeIcon" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="false" static="false" overload="false" type="void" signature="setCascadeIcon(const QIcon &amp; icon)">
+                <parameter left="const QIcon &amp;" right="" name="icon" default=""/>
+            </function>
+            <function access="public" threadsafety="unspecified" status="obsolete" name="setTileIcon" fullname="QtWindowListMenu::setTileIcon" href="qtwindowlistmenu-obsolete.html#setTileIcon" location="qtwindowlistmenu.h" virtual="non" meta="plain" const="false" static="false" overload="false" type="void" signature="setTileIcon(const QIcon &amp; icon)">
+                <parameter left="const QIcon &amp;" right="" name="icon" default=""/>
+            </function>
+            <function access="protected" threadsafety="unspecified" status="commendable" name="syncWithMdiArea" fullname="QtWindowListMenu::syncWithMdiArea" href="qtwindowlistmenu.html#syncWithMdiArea" location="qtwindowlistmenu.h" virtual="impure" meta="slot" const="false" static="false" overload="false" type="void" signature="syncWithMdiArea()"/>
+            <function access="protected" threadsafety="unspecified" status="commendable" name="activateWindow" fullname="QtWindowListMenu::activateWindow" href="qtwindowlistmenu.html#activateWindow" location="qtwindowlistmenu.h" virtual="non" meta="slot" const="false" static="false" overload="false" type="void" signature="activateWindow(QAction * act)">
+                <parameter left="QAction *" right="" name="act" default=""/>
+            </function>
+            <function access="protected" threadsafety="unspecified" status="commendable" name="windowDestroyed" fullname="QtWindowListMenu::windowDestroyed" href="qtwindowlistmenu.html#windowDestroyed" location="qtwindowlistmenu.h" virtual="non" meta="slot" const="false" static="false" overload="false" type="void" signature="windowDestroyed(QObject * obj)">
+                <parameter left="QObject *" right="" name="obj" default=""/>
+            </function>
+        </class>
+        <page access="public" status="commendable" name="index.html" href="index.html" subtype="page" title="Window Menu" fulltitle="Window Menu" subtitle="" location="index.qdoc">
+            <contents name="description" title="Description" level="1"/>
+            <contents name="classes" title="Classes" level="1"/>
+            <contents name="tested-platforms" title="Tested platforms" level="1"/>
+            <contents name="screenshots" title="Screenshots" level="1"/>
+        </page>
+    </namespace>
+</INDEX>

@@ -1,0 +1,46 @@
+/*!
+	\page index.html
+	\title Spellchecking TextEdit
+
+    	\section1 Description
+	
+            The QtSpellCheckingTextEdit widget provides spell checking
+            for QTextEdit. Currently the only supported platform is
+            Mac OS X.
+        
+
+	
+             The widget integrates with the native spell checking
+            system and provides syntax highlighting and and a context
+            menu similar to the one provided by Carbon or Cocoa text edits.
+            
+        
+
+    	
+        \section1 Classes
+	    \list
+	 \i  QtSpellCheckingTextEdit\endlist
+	
+    
+
+    	
+
+    	
+    		\section1 Tested platforms
+		\list
+		\i Qt 4.4, 4.5 / MacOS X 10.5 / gcc
+		    \endlist
+
+    	
+    		\section1 Unsupported platforms
+		\list
+		\i Windows
+		    \i Unix/Linux
+		    \endlist
+
+	
+		\section1 Screenshots
+
+    		\img spellcheck.png
+		    
+	*/

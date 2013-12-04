@@ -1,0 +1,114 @@
+/****************************************************************************
+** 
+** Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies).
+** All rights reserved.
+** Contact: Nokia Corporation (qt-info@nokia.com)
+** 
+** This file is part of a Qt Solutions component.
+**
+** Commercial Usage  
+** Licensees holding valid Qt Commercial licenses may use this file in
+** accordance with the Qt Solutions Commercial License Agreement provided
+** with the Software or, alternatively, in accordance with the terms
+** contained in a written agreement between you and Nokia.
+** 
+** GNU Lesser General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU Lesser
+** General Public License version 2.1 as published by the Free Software
+** Foundation and appearing in the file LICENSE.LGPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU Lesser General Public License version 2.1 requirements
+** will be met: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+** 
+** In addition, as a special exception, Nokia gives you certain
+** additional rights. These rights are described in the Nokia Qt LGPL
+** Exception version 1.1, included in the file LGPL_EXCEPTION.txt in this
+** package.
+** 
+** GNU General Public License Usage 
+** Alternatively, this file may be used under the terms of the GNU
+** General Public License version 3.0 as published by the Free Software
+** Foundation and appearing in the file LICENSE.GPL included in the
+** packaging of this file.  Please review the following information to
+** ensure the GNU General Public License version 3.0 requirements will be
+** met: http://www.gnu.org/copyleft/gpl.html.
+** 
+** Please note Third Party Software included with Qt Solutions may impose
+** additional restrictions and it is the user's responsibility to ensure
+** that they have met the licensing requirements of the GPL, LGPL, or Qt
+** Solutions Commercial license and the relevant license of the Third
+** Party Software they are using.
+** 
+** If you are unsure which license is appropriate for your use, please
+** contact Nokia at qt-info@nokia.com.
+** 
+****************************************************************************/
+
+/*!
+\page overview.html
+\title QtLibxmlReader overview
+
+QtLibxmlReader is a SAX2 parser. Like \c QXmlSimpleReader, it inherits
+\c QXmlReader and therefore Qt's SAX API. Unlike \c QXmlSimpleReader,
+\c QtLibxmlReader uses \c libxml2 to do the actual parsing.
+
+\list
+\i \link libxml2.html Notes on libxml2\endlink
+\i \link testxml.html Using testxml to compare how xml files are parsed with QtLibxmlReader and QXmlSimpleReader\endlink
+\endlist
+
+For the most part, \c QtLibxmlReader behaves just like \c QXmlSimpleReader. In particular, you can reuse your \c{QXml*Handler} objects.
+
+The following differences were noted during testing:
+
+\table
+\header \i \c QXmlSimpleReader \i \c QtLibxmlReader
+\row
+\i Calls \c QContentHandler::skippedEntity() for every reference to an external entity,
+unless a \c QXmlEntityResolver is created to load it.
+\i If the \c NOENT feature is set, loads external entities from the local filesystem, or from the
+network via HTTP or FTP. If the \c NOENT feature is not set, reports external entity references with \c QContentHandler::skippedEntity(). In either case internal entity references are replaced. Does not support \c QXmlEntityResolver.
+\row
+\i The type and valueDefault arguments passed to
+\c QXmlDeclHandler::attributeDecl() are always empty.
+\i The type and valueDefault arguments passed to
+\c QXmlDeclHandler::attributeDecl() are set correctly.
+\row
+\i Merges a sequence of entity references into a single call to
+\c QXmlContentHandler::characters(), which is passed the replacement text
+of the whole sequence.
+\i Issues a separate call to \c XmlContentHandler::characters() for each
+entity reference, passing in the replacement text for that single
+entity.
+\row
+\i Calls \c QXmlContentHandler::processingInstruction() for all
+processing instructions.
+\i Calls \c QXmlContentHandler::processingInstruction() for all
+processing instructions except \c{<?xml} ... \c{?>}.
+\row
+\i Substitues entity references with their replacement text in
+attribute values.
+\i Does not substitute entity references in attribute values.
+\row
+\i Sequences of whitespace characters in attribute values are reported
+unchanged.
+\i Sequences of whitespace characters in attribute values are replaced
+with a single space.
+\row
+\i When calling \c QXmlContentHandler::characters(), \c{"\r"} and \c{"\r\n"} are reported unchanged.
+\i When calling \c QXmlContentHandler::characters(), \c{"\r"} and \c{"\r\n"} are replaced with \c{"\n"}.
+\row
+\i Only reports attributes that are present in an element.
+\i If an element has a default attribute defined in the DTD, this
+attribute is always reported.
+\row
+\i \c setFeature() manipulates \c QXmlSimpleReader's features.
+\i \c setFeature() manipulates a subset of \c{libxml2}'s features.
+\row
+\i Supports incremental parsing.
+\i Does not support incremental parsing.
+\endtable
+
+*/
+
+
